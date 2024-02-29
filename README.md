@@ -1,66 +1,53 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Gestionnaire de Tâches
+Le projet Gestionnaire de Tâches est une application web simple conçue pour aider les utilisateurs à organiser et gérer leurs tâches efficacement. Inspiré par la flexibilité et la polyvalence de Notion, ce projet vise à fournir aux utilisateurs une expérience de gestion des tâches rationalisée avec des fonctionnalités telles que la création de tâches, la catégorisation, la priorisation et le suivi.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Fonctionnalités
+Création de Tâches: Les utilisateurs peuvent facilement créer de nouvelles tâches, en spécifiant des détails tels que le titre, la description, la date d'échéance et la priorité.
 
-## About Laravel
+Gestion de Catégories: Les tâches peuvent être organisées dans différentes catégories ou projets, permettant aux utilisateurs de regrouper les tâches connexes pour une meilleure organisation et clarté.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Attribution de Priorité: Les utilisateurs peuvent attribuer des niveaux de priorité aux tâches, les aidant à identifier et à se concentrer sur les tâches prioritaires de manière plus efficace.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Suivi des Tâches: L'application fournit aux utilisateurs un tableau de bord centralisé pour afficher toutes leurs tâches, suivre leur progression et surveiller les prochaines échéances.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Interface Conviviale: Avec une interface utilisateur propre et intuitive, le Gestionnaire de Tâches garantit une expérience utilisateur agréable, rendant la gestion des tâches simple et efficace.
 
-## Learning Laravel
+Technologies Utilisées
+Frontend: HTML,Tailwind CSS
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Backend: Framework Laravel Blade
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Base de Données: Base de données MySQL pour stocker les données des tâches
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Authentification: Laravel Passport pour l'authentification et l'autorisation des utilisateurs
 
-## Laravel Sponsors
+Déploiement: Conteneurs Docker pour un déploiement et une évolutivité faciles
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Pour commencer avec le projet Gestionnaire de Tâches, suivez ces étapes :
 
-### Premium Partners
+Cloner le Dépôt: Clonez le dépôt du Gestionnaire de Tâches sur votre machine locale en utilisant la commande suivante :
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+bash
+Copy code
+git clone https://github.com/votre-nom-utilisateur/gestionnaire-de-taches.git
+Installer les Dépendances: Accédez au répertoire du projet et installez les dépendances nécessaires à l'aide de Composer et npm :
 
-## Contributing
+bash
+Copy code
+cd gestionnaire-de-taches
+composer install
+npm install
+Configuration de la Base de Données: Configurez les paramètres de votre base de données dans le fichier .env et exécutez les migrations de base de données pour créer les tables nécessaires :
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+bash
+Copy code
+php artisan migrate
+Démarrer le Serveur de Développement: Lancez le serveur de développement Laravel pour démarrer l'application :
 
-## Code of Conduct
+bash
+Copy code
+php artisan serve
+Accéder à l'Application: Ouvrez votre navigateur web et accédez à http://localhost:8000 pour accéder à l'application Gestionnaire de Tâches.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Contribution
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer au projet Gestionnaire de Tâches, veuillez forker le dépôt, apporter vos modifications et soumettre une demande de fusion (pull request). Assurez-vous de suivre les normes de codage et les directives du projet.
